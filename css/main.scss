@@ -30,7 +30,13 @@
 //   M  YM.P'  MM    MM      XMX      MM    MM    MM   `YMMMa.
 //   M  `YM'   MM    MM    ,V' VA.    MM    MM    MM   L.   I8
 // .JML. `'  .JMML..JMML..AM.   .MA..JMML..JMML  JMML. M9mmmP'
-
+@mixin group() {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
 
 
 
@@ -45,6 +51,25 @@
 
 
 
+//              ,,        ,,
+//   .g8""8q.  *MM        db                    mm
+// .dP'    `YM. MM                              MM
+// dM'      `MM MM,dMMb.`7MM  .gP"Ya   ,p6"bo mmMMmm ,pP"Ybd
+// MM        MM MM    `Mb MM ,M'   Yb 6M'  OO   MM   8I   `"
+// MM.      ,MP MM     M8 MM 8M"""""" 8M        MM   `YMMMa.
+// `Mb.    ,dP' MM.   ,M9 MM YM.    , YM.    ,  MM   L.   I8
+//   `"bmmd"'   P^YbmdP'  MM  `Mbmmd'  YMbmd'   `MbmoM9mmmP'
+//                     QO MP
+//                     `bmP
+.mediaObj {
+	@include group();
+}
+.media {
+
+}
+.mediaDesc {
+
+}
 
 //            ,,                                          ,,        ,,
 //  .M"""bgd  db   mm               `7MMF'     A     `7MF'db      `7MM
