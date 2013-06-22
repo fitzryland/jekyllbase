@@ -54,8 +54,12 @@
 // .     `MM  MM   MM  8M""""""         `MM A'  `MM A'    MM 8MI    MM 8M""""""
 // Mb     dM  MM   MM  YM.    ,          :MM;    :MM;     MM `Mb    MM YM.    ,
 // P"Ybmmd" .JMML. `Mbmo`Mbmmd'           VF      VF    .JMML.`Wbmd"MML.`Mbmmd'
-
-
+* {
+	box-sizing: border-box;
+}
+img {
+	padding: 0 !important; // with box-sizing: border-box images should never have padding
+}
 
 
 
